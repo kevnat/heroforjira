@@ -1,0 +1,16 @@
+[build]
+  command   = "npm run build"
+  publish   = "dist"
+  functions = "netlify/functions"
+
+# Proxy Jira API calls through the serverless function (keeps credentials server-side)
+[[redirects]]
+  from   = "/api/jira/*"
+  to     = "/.netlify/functions/jira/:splat"
+  status = 200
+
+# SPA fallback — all routes serve index.html
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
