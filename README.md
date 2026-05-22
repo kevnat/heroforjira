@@ -1,6 +1,22 @@
 # Hero for Jira
 
-Custom dashboard for managing Jira chaos on your own terms. Access Jira through Proxy function using an API key. Can be run locally or hosted (currently Netlify & Supabase).
+## The problem
+
+Jira's built-in epic board is rigid. Epics move between statuses that don't reflect how work actually progresses — there's no good way to show that something is *technically* in progress but hasn't really been picked up yet, or that it's almost done but still has a long tail. You end up with everything lumped into "In Progress" and no real signal about what's actually moving.
+
+The other thing: notes. Adding context to a ticket means leaving a comment that gets buried, is visible to everyone, and has nothing to do with the commit or the PR. There's no good place to keep a running thought about an epic — why it's stalled, what the next conversation needs to cover, what you're watching. So those notes end up in Slack, or a notebook, or nowhere.
+
+## The solution
+
+Think Trello, but it's your Jira data, your layout, and it's free.
+
+Hero for Jira pulls your epics out of Jira and puts them on a clean Kanban board you actually want to look at. No Jira Premium. No clunky roadmap views. Just your team's work, organized the way you think about it.
+
+**Use it solo** — mark up epics, add private notes, hide the noise, rearrange cards before a planning meeting. Everything saves locally in your browser, so your view stays yours. Think of it as a notebook that lives next to your Jira board: a place to capture context, flag blockers, and prep for conversations without polluting the ticket itself.
+
+**Share it with your team** — deploy once to Netlify and send the link. Add Supabase and notes, card order, and column overrides sync across everyone in real time. One passphrase lets trusted teammates edit; everyone else gets a read-only view.
+
+Epics are automatically sorted into five columns — **Up Next**, **Starting**, **In Dev**, **In Test**, and **Almost Done** — based on the status of their child tickets. Drag to override. Add notes. Hide what doesn't matter right now. It's a much simpler surface than Jira for running standups, planning sessions, or just keeping tabs on where things are.
 
 ---
 
