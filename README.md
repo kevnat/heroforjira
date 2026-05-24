@@ -1,8 +1,6 @@
 # Hero for Jira
 
-A Kanban board for your Jira epics. No Jira Premium required.
-
-Epics are automatically sorted into five columns — **Up Next**, **Starting**, **In Dev**, **In Test**, and **Almost Done** — based on the status of their child tickets. Teammates can add notes, reorder cards, and hide noise. A passphrase lock keeps the board tidy.
+Custom dashboard for managing Jira chaos on your own terms. Access Jira through Proxy function using an API key. Can be run locally or hosted (currently Netlify & Supabase).
 
 ---
 
